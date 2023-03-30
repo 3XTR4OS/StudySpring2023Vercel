@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+            "width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+
+    <style>
+
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #F0F8FF;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+
+
+<h1>Тест на темперамент</h1>
+<!-- Create Form -->
+<head>
+    <title>Вопросы про воду</title>
+</head>
+
+<form>
+<div>
+    <div style="text-align: left">
+        <p>1. Часто ли вы испытываете тягу к новым впечатлениям, к тому, чтобы отвлечься, испытывать сильные ощущения?</p>
+        <label><input type="radio" name="question1" value="Да">Да</label>
+        <label><input type="radio" name="question1" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>2. Часто ли вы чувствуете, что нуждаетесь в друзьях, которые могут вас понять, ободрить или посочувствовать?</p>
+        <label><input type="radio" name="question2" value="Да">Да</label>
+        <label><input type="radio" name="question2" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>3. Считаете ли вы себя беззаботным человеком?</p>
+        <label><input type="radio" name="question3" value="Да">Да</label>
+        <label><input type="radio" name="question3" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>4. Очень ли трудно вам отказываться от своих намерений?</p>
+        <label><input type="radio" name="question4" value="Да">Да</label>
+        <label><input type="radio" name="question4" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>5. Обдумываете ли вы свои дела не спеша и предпочитаете ли подождать, прежде чем действовать?</p>
+        <label><input type="radio" name="question5" value="Да">Да</label>
+        <label><input type="radio" name="question5" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>6. Всегда ли вы сдерживаете свои обещания, даже если это вам невыгодно?</p>
+        <label><input type="radio" name="question6" value="Да">Да</label>
+        <label><input type="radio" name="question6" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>7. Часто ли у вас бывают спады и подъемы настроения?</p>
+        <label><input type="radio" name="question7" value="Да">Да</label>
+        <label><input type="radio" name="question7" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>8. Быстро ли вы обычно действуете и говорите, не тратите ли много времени на обдумывание?</p>
+        <label><input type="radio" name="question8" value="Да">Да</label>
+        <label><input type="radio" name="question8" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>9. Возникало ли у вас когда-нибудь чувство, что вы несчастны, хотя никакой серьезной причины для этого не было?</p>
+        <label><input type="radio" name="question9" value="Да">Да</label>
+        <label><input type="radio" name="question9" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>10. Верно ли, что на спор вы способны решиться на все?</p>
+        <label><input type="radio" name="question10" value="Да">Да</label>
+        <label><input type="radio" name="question10" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>11. Смущаетесь ли вы, когда хотите познакомиться с человеком противоположного пола, который вам симпатичен?</p>
+        <label><input type="radio" name="question11" value="Да">Да</label>
+        <label><input type="radio" name="question11" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>12. Бывает ли когда-нибудь, что, разозлившись, вы выходите из себя?</p>
+        <label><input type="radio" name="question12" value="Да">Да</label>
+        <label><input type="radio" name="question12" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>13. Часто ли бывает, что вы действуете необдуманно, под влиянием момента?</p>
+        <label><input type="radio" name="question13" value="Да">Да</label>
+        <label><input type="radio" name="question13" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>14. Часто ли вас беспокоят мысли о том, что вам не следовало чего-либо делать или говорить?</p>
+        <label><input type="radio" name="question14" value="Да">Да</label>
+        <label><input type="radio" name="question14" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>15. Предпочитаете ли вы чтение книг встречам с людьми?</p>
+        <label><input type="radio" name="question15" value="Да">Да</label>
+        <label><input type="radio" name="question15" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>16. Верно ли, что вас легко задеть?</p>
+        <label><input type="radio" name="question16" value="Да">Да</label>
+        <label><input type="radio" name="question16" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>17. Любите ли вы часто бывать в компании?</p>
+        <label><input type="radio" name="question17" value="Да">Да</label>
+        <label><input type="radio" name="question17" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>18. Бывают ли иногда у вас такие мысли, которыми вам не хотелось бы делиться с другими людьми?</p>
+        <label><input type="radio" name="question18" value="Да">Да</label>
+        <label><input type="radio" name="question18" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>19. Верно ли, что иногда вы настолько полны энергии, что все горит в руках, а иногда чувствуете сильную вялость?</p>
+        <label><input type="radio" name="question19" value="Да">Да</label>
+        <label><input type="radio" name="question19" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>20. Стараетесь ли вы ограничить круг своих знакомых небольшим числом самых близких друзей?</p>
+        <label><input type="radio" name="question20" value="Да">Да</label>
+        <label><input type="radio" name="question20" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>21. Много ли вы мечтаете?</p>
+        <label><input type="radio" name="question21" value="Да">Да</label>
+        <label><input type="radio" name="question21" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>22. Когда на вас кричат, отвечаете ли вы тем же?</p>
+        <label><input type="radio" name="question22" value="Да">Да</label>
+        <label><input type="radio" name="question22" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>23. Считаете ли вы все свои привычки хорошими?</p>
+        <label><input type="radio" name="question23" value="Да">Да</label>
+        <label><input type="radio" name="question23" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>24. Часто ли у вас появляется чувство, что вы в чем-то виноваты?</p>
+        <label><input type="radio" name="question24" value="Да">Да</label>
+        <label><input type="radio" name="question24" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>25. Способны ли вы иногда дать волю своим чувствам и беззаботно развлечься с веселой компанией?</p>
+        <label><input type="radio" name="question25" value="Да">Да</label>
+        <label><input type="radio" name="question25" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>26. Можно ли сказать, что нервы у вас часто бывают натянуты до предела?</p>
+        <label><input type="radio" name="question26" value="Да">Да</label>
+        <label><input type="radio" name="question26" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>27. Слывете ли вы за человека живого и веселого?</p>
+        <label><input type="radio" name="question27" value="Да">Да</label>
+        <label><input type="radio" name="question27" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>28. После того как дело сделано, часто ли вы мысленно возвращаетесь к нему и думаете, что могли бы сделать лучше?</p>
+        <label><input type="radio" name="question28" value="Да">Да</label>
+        <label><input type="radio" name="question28" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>29. Чувствуете ли вы себя неспокойно, находясь в большой компании?</p>
+        <label><input type="radio" name="question29" value="Да">Да</label>
+        <label><input type="radio" name="question29" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>30. Бывает ли, что вы передаете слухи?</p>
+        <label><input type="radio" name="question30" value="Да">Да</label>
+        <label><input type="radio" name="question30" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>31. Бывает ли, что вам не спится из-за того, что в голову лезут разные мысли?</p>
+        <label><input type="radio" name="question31" value="Да">Да</label>
+        <label><input type="radio" name="question31" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>32. Что вы предпочитаете, если хотите узнать что-либо: найти в книге или спросить у друзей?</p>
+        <label><input type="radio" name="question32" value="Да">Да</label>
+        <label><input type="radio" name="question32" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>33. Бывают ли у вас сильные сердцебиения?</p>
+        <label><input type="radio" name="question33" value="Да">Да</label>
+        <label><input type="radio" name="question33" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>34. Нравится ли вам работа, требующая сосредоточения?</p>
+        <label><input type="radio" name="question34" value="Да">Да</label>
+        <label><input type="radio" name="question34" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>35. Бывают ли у вас приступы дрожи?</p>
+        <label><input type="radio" name="question35" value="Да">Да</label>
+        <label><input type="radio" name="question35" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>36. Всегда ли вы говорите только правду?</p>
+        <label><input type="radio" name="question36" value="Да">Да</label>
+        <label><input type="radio" name="question36" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>37. Бывает ли вам неприятно находиться в компании, где все подшучивают друг над другом?</p>
+        <label><input type="radio" name="question37" value="Да">Да</label>
+        <label><input type="radio" name="question37" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>38. Раздражительны ли вы?</p>
+        <label><input type="radio" name="question38" value="Да">Да</label>
+        <label><input type="radio" name="question38" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>39. Нравится ли вам работа, требующая быстрого действия?</p>
+        <label><input type="radio" name="question39" value="Да">Да</label>
+        <label><input type="radio" name="question39" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>40. Верно ли, что вам часто не дают покоя мысли о разных неприятностях и «ужасах», которые могли бы произойти, хотя все кончилось благополучно?</p>
+        <label><input type="radio" name="question40" value="Да">Да</label>
+        <label><input type="radio" name="question40" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>41. Верно ли, что вы неторопливы в движениях и несколько медлительны?</p>
+        <label><input type="radio" name="question41" value="Да">Да</label>
+        <label><input type="radio" name="question41" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>42. Опаздывали ли вы когда-нибудь на работу или на встречу с кем-либо?</p>
+        <label><input type="radio" name="question42" value="Да">Да</label>
+        <label><input type="radio" name="question42" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>43. Часто ли вам снятся кошмары?</p>
+        <label><input type="radio" name="question43" value="Да">Да</label>
+        <label><input type="radio" name="question43" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>44. Верно ли, что вы так любите поговорить, что не упускаете любого удобного случая побеседовать с новым человеком?</p>
+        <label><input type="radio" name="question44" value="Да">Да</label>
+        <label><input type="radio" name="question44" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>45. Беспокоят ли вас какие-нибудь боли?</p>
+        <label><input type="radio" name="question45" value="Да">Да</label>
+        <label><input type="radio" name="question45" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>46. Огорчились бы вы, если бы долго не могли видеться со своими друзьями?</p>
+        <label><input type="radio" name="question46" value="Да">Да</label>
+        <label><input type="radio" name="question46" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>47. Можете ли вы назвать себя нервным человеком?</p>
+        <label><input type="radio" name="question47" value="Да">Да</label>
+        <label><input type="radio" name="question47" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>48. Есть ли среди ваших знакомых такие, которые вам явно не нравятся?</p>
+        <label><input type="radio" name="question48" value="Да">Да</label>
+        <label><input type="radio" name="question48" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>49. Могли бы вы сказать, что вы уверенный в себе человек?</p>
+        <label><input type="radio" name="question49" value="Да">Да</label>
+        <label><input type="radio" name="question49" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>50. Легко ли вас задевает критика ваших недостатков или вашей работы?</p>
+        <label><input type="radio" name="question50" value="Да">Да</label>
+        <label><input type="radio" name="question50" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>51. Трудно ли вам получить настоящее удовольствие от мероприятий, в которых участвует много народа?</p>
+        <label><input type="radio" name="question51" value="Да">Да</label>
+        <label><input type="radio" name="question51" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>52. Беспокоит ли вас чувство, что вы чем-то хуже других?</p>
+        <label><input type="radio" name="question52" value="Да">Да</label>
+        <label><input type="radio" name="question52" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>53. Сумели бы вы внести оживление в скучную компанию?</p>
+        <label><input type="radio" name="question53" value="Да">Да</label>
+        <label><input type="radio" name="question53" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>54. Бывает ли, что вы говорите о вещах, в которых совсем не разбираетесь?</p>
+        <label><input type="radio" name="question54" value="Да">Да</label>
+        <label><input type="radio" name="question54" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>55. Беспокоитесь ли вы о своем здоровье?</p>
+        <label><input type="radio" name="question55" value="Да">Да</label>
+        <label><input type="radio" name="question55" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>56. Любите ли вы подшутить над другими?</p>
+        <label><input type="radio" name="question56" value="Да">Да</label>
+        <label><input type="radio" name="question56" value="Нет">Нет</label>
+    </div>
+
+    <div style="text-align: left">
+        <p>57. Страдаете ли вы бессонницей?</p>
+        <label><input type="radio" name="question57" value="Да">Да</label>
+        <label><input type="radio" name="question57" value="Нет">Нет</label>
+    </div>
+
+
+</div>
+</form>
+<div id="result"></div>
+<script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const result = document.querySelector('#result');
+    const question1 = form.elements.question1.value;
+    const question2 = form.elements.question2.value;
+    const question3 = form.elements.question3.value;
+    result.textContent = `На первый вопрос вы ответили "${question1}", на второй вопрос вы ответили "${question2}", на третий вопрос вы ответили "${question3}"`;
+  });
+
+</script>
+
+</html>
+
+<script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const result = document.querySelector('#result');
+    const question1 = form.elements.question1.value;
+    const question2 = form.elements.question2.value;
+    const question3 = form.elements.question3.value;
+    result.textContent = `На первый вопрос вы ответили "${question1}", на второй вопрос вы ответили "${question2}", на третий вопрос вы ответили "${question3}"`;
+  });
+</script>
