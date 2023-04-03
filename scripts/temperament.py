@@ -121,16 +121,27 @@ def select_colleges_under_temperament(temperament, college_list=scripts.colleges
     """
 
     for college in college_list:
-        result += """<ol class="rounded"> {}""".format(college)
+        matches_found = False
+        college_head_exist = False
+
         for profession in college_list[college].items():
             if temperament in profession[-1]:
+                matches_found = True
                 # result += """<div>Под ваш темперамент подходит профессия: {}</div>""".format(profession[0])
-                result += """
-                    <li><a href="#">{}</a></li>
-                    """.format(profession[0])
 
-    result += '''
+            # используется для пропуска заголовков без профессий
+            if matches_found:
+                if not college_head_exist:
+                    result += """<ol class="rounded"> {}""".format(college)
+                    college_head_exist = True
+                else:
+                    result += """
+                        <li><a href="#">{}</a></li>
+                        """.format(profession[0])
+
+    result += """
     </body>
 
-</html>'''
+</html>"""
     return result
+
