@@ -74,6 +74,14 @@
             margin-bottom: 20px;
         }
 
+        .text {
+            position: relative;
+            color: white;
+            top: 0px;
+            margin-bottom: 25px;
+            font-size: 34px;
+            font-family: 'Calibri light';
+        }
 
     </style>
 
@@ -89,7 +97,7 @@
 </head>
 
 
-<h1>Тест на темперамент</h1>
+<h1 class="text">Тест на темперамент по методике Айзенка</h1>
 <!-- Create Form -->
 
 <form class="form" action="calculate" method="post"> {% csrf_token %}
@@ -281,7 +289,7 @@
     </div>
 
     <div style="text-align: left">
-        <p class="question">32. Что вы предпочитаете, если хотите узнать что-либо: найти в книге или спросить у друзей?</p>
+        <p class="question">32. Предпочли бы вы остаться в одиночестве дома, чем пойти на скучную вечеринку?</p>
         <div class="form-control select"><label><input type="radio" name="question32" value="Да" required>Да</label></div>
         <div class="form-control select"><label><input type="radio" name="question32" value="Нет" required>Нет</label></div>
     </div>
